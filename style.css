@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.radio{
+  display: none;
+}
+
+.wrapper{
+    border: 1px solid black;
+    width: 450px;
+    margin: 10vw auto;
+}
+
+.tabs{
+    background: blueviolet;
+}
+
+.tab{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.panels{
+    background: lightgray;
+    height: 150px;
+}
+
+.panel{
+    display: none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel
+{
+    display: block;
+}
